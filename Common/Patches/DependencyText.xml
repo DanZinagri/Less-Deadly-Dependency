@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text only. The stage and lethality edits depend on the mod settings, so they are made in code at startup
+     (DependencyRework.cs); these always apply and stay identical every launch, which keeps XML caches safe. -->
+<Patch>
+
+	<!-- Every generated "<drug> dependency" gene takes its description from this template. -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneTemplateDef[defName="ChemicalDependency"]/description</xpath>
+		<value>
+			<description>Carriers of this gene need to ingest {0} on a regular basis to stay healthy. After {DEFICIENCYDURATION} without {0}, carriers will suffer from {0} deficiency. After {COMADURATION}, it settles into a chronic deficiency that does not get any worse. It is never lethal, but it lasts until they ingest {0} again.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="GeneticDrugNeed"]/description</xpath>
+		<value>
+			<description>This person has a genetically-induced biochemical dependency on a specific drug. Without regular doses of the drug, their health and mood degrade until they settle into a chronic deficiency. It is not lethal, but it lasts until they take the drug again.\n\nTakes effect after age: 13.</description>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Hediff stage that replaces the deficiency coma. -->
+	<LDD_ChronicDeficiency>chronic deficiency</LDD_ChronicDeficiency>
+
+	<!-- Overrides Biotech's key, which ends with the coma and death days. Shared by every dependency hediff, including
+	     any left lethal (Hussar's luciferium unless included), so it says nothing about what happens past deficiency. -->
+	<GeneDefChemicalNeedDurationDesc>{PAWN_nameDef} needs to ingest {0} on a regular basis to stay healthy. After {DEFICIENCYDURATION} without {0}, {PAWN_pronoun} will suffer from {0} deficiency.</GeneDefChemicalNeedDurationDesc>
+
+	<LDD_HussarLuciferiumGeneDesc>Carriers of this gene need to ingest luciferium on a regular basis to stay healthy. After 10 days without luciferium, carriers will suffer from luciferium deficiency. After 20 days, it settles into a chronic deficiency that does not get any worse. It is never lethal, but it lasts until they ingest luciferium again.</LDD_HussarLuciferiumGeneDesc>
+
+	<!-- Settings -->
+	<LDD_RequiresRestart>Requires restart.</LDD_RequiresRestart>
+	<LDD_ChronicIntro>Instead of a coma and death, an unsatisfied dependency settles into a chronic deficiency at the point where the coma used to start (day 30 for vanilla dependencies). These caps apply at that stage.</LDD_ChronicIntro>
+	<LDD_ConsciousnessCap>Consciousness cap: {0}</LDD_ConsciousnessCap>
+	<LDD_ConsciousnessCapTip>Below 30% a pawn falls unconscious, so the slider stops there. Other injuries still stack on top, so leave some margin.</LDD_ConsciousnessCapTip>
+	<LDD_MovingCap>Moving cap: {0}</LDD_MovingCap>
+	<LDD_MovingCapTip>Below 15% a pawn can no longer walk, so the slider stops there.</LDD_MovingCapTip>
+	<LDD_ManipulationCap>Manipulation cap: {0}</LDD_ManipulationCap>
+	<LDD_SightCap>Sight cap: {0}</LDD_SightCap>
+	<LDD_HearingCap>Hearing cap: {0}</LDD_HearingCap>
+	<LDD_IncludeHussar>Include VRE - Hussar's luciferium dependency</LDD_IncludeHussar>
+	<LDD_IncludeHussarTip>Hussar's luciferium dependency gene uses its own condition: coma after 20 days, death after 30. When ticked it gets the same chronic stage at day 20 instead.</LDD_IncludeHussarTip>
+	<LDD_HussarNotLoaded>(VRE - Hussar is not loaded)</LDD_HussarNotLoaded>
+	<LDD_ResetDefaults>Reset to defaults</LDD_ResetDefaults>
+
+</LanguageData>
